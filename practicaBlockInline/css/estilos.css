@@ -1,0 +1,19 @@
+/* ------------------***---------------------*/
+/*             CSS de Youssef AHM            */
+/*-------------------------------------------*/
+div {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    border: 3px solid black;
+    /* propiedad nativa, para comportarse como bloque */
+    /* display: block; */
+
+    /* cambiar la propiedad nativa  */
+    /* display: inline-block; */
+}
+
+span {
+    background-color: green;
+    /* los width y height no afectan a los inline */
+}
