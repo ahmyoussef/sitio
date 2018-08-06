@@ -39,17 +39,56 @@
     <!-- nuestros estilos de CSS -->
     <link rel="stylesheet" href="css/estilos.css">
 
+    <!-- esto sobreescribe el estilo del elemento en css -->
+    
+    <!-- <style>
+        .menu-principal__item01{
+            color:green;
+        }
+    </style> -->
+
 </head>
 <body>
+    <!-- CREACION DE UN BOTON MEDINATE <A>
+    * id es un nombre unico de A, no se puede meter mas id 
+    *Este boton sale de la carpeta para ir atras.
+    *Los 2 puntos.. son para salir de una carpeta -->
+
+    <a id="boton" href="../index.html"> INICIO</a>
 
     <!-- Crear un cuadrado color rojo -->
-    <div></div>
+    <div class="cajaroja">
     
-    <div></div>
-
+        <p class="cajaroja__texto"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.<span class="cajaroja__texto__negrita"> Debitis </span> provident labore dicta harum! Culpa, dolore, error neque rem suscipit mollitia quas rerum reprehenderit saepe architecto temporibus voluptates, atque ratione totam.
+        </p.cajaroja__texto>
+    </div>
+    <div class="cajaazul">
+        <p class="cajaazul__texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quis inventore aliquam, molestias officia magnam hic minima, voluptatem officiis dolorum aperiam itaque quasi ipsum voluptatum ex laborum suscipit sint tempora!</p>
+    </div>
     <!-- zona vacia como div, pero inline -->
     <span> HOLA</span>
     <span> ADIOS</span>
+    <!-- Nuevo ejemplo, pero en BEM -->
+    <!-- Creacion de una linea divisoria: hr-->
+    <hr>
+    <h1>Nuevo ejemplo, pero en BEM</h1>
+
+    <!-- header>nav.menu>a.menu__item0${item0$}*4 -->
+    <header>
+        <nav class="menu-principal">
+            <!-- se eleimina la HREF, pk no hace falta cargar la pagina si ya estoy en el inicio -->
+            <a class="menu-principal__item01--off">inicio</a>
+                <!-- los span con el codigo, es para separar los elementos del menu con una barra -->
+                <span>&#9474;</span>
+            <a href="#" class="menu-principal__item02">servicios</a>
+                <span>&#9474;</span>
+            <a href="#" class="menu-principal__item03">quienes somos</a>
+                <span>&#9474;</span>
+            <a href="#" class="menu-principal__item04">contacto</a>
+                <span>&#9474;</span>
+        </nav>
+    </header>
+
 
 
 </body>
