@@ -52,25 +52,30 @@ html{
 
 /* --------------estilos propiedades de la segonda pagina-------------------- */
 section {
-    padding: 40px;
+    padding: 50px;
 }
 
-.fotomontana{
-    width: 800px; 
-    float: left;
-    margin-right: 50px;   
+.fotomontana01{
+    width: 45%; 
+    /* float: left;
+    margin-right: 50px;    */
 }
 
 .paragrafo__derecha{
-    margin: 0px 20px;
-    border: 0px 20px;
-    /* padding: 0px 20px; */
+    width: 45%;
+    display: inline-block;
+    /* float: right; */
+    margin: 0px 0px 50px 5%;
+    /* border: 0px 20px; */
+    vertical-align: top;
+
 }
 
 .paragrafo__abajo{
-    clear: both;
+    margin-top: 25px;
+    /* clear: both;
     margin: 20px 0px;
-    padding: 20px 0px;
+    padding: 20px 0px; */
 
 }
 
