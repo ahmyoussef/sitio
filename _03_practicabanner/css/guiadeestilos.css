@@ -1,0 +1,133 @@
+/* ------------------***---------------------*/
+/*   Guia de Estilos  CSS de Youssef AHM     */
+/*-------------------------------------------*/
+
+  /* ------------Inclusion en memoria de la siguiente Tipografia---------- */
+  @font-face{
+    font-family: 'OpenSansRegular';
+    src: url('opensans-regular-webfont.woff') format('woff');
+}
+@font-face{
+    font-family: 'OpenSansBold';
+    src: url('opensans-bold-webfont.woff') format('woff');
+}
+
+/* ----------Configuracion de los H -----------*/
+
+/* SEO */
+h1{
+    font-size: 2.5em;
+
+}
+
+h2{
+    font-size: 2rem;
+
+}
+
+h3{
+    font-size: 1.5rem;
+
+}
+
+/* --------<p> es un 1 rem-------- */
+h4{
+    font-size: 0.8rem;
+
+}
+
+h5{
+    font-size: 0.6rem;
+
+}
+
+h6{ 
+    font-size: 0.4rem;
+
+}
+
+/* ------------Paragrafos------------------- */
+
+p{
+    font-size: 1.250rem;
+
+}
+
+    /* pre, coge el formato previo si el texto es cogido de word, x ej. */
+pre{
+    font-size: 1rem;
+}
+
+/* -----------------Colores------------------------------ */
+
+.turquezaTexto {
+    color:#71C8AC;
+
+}
+
+.turquezaFondo{
+    background-color:#71C8AC;
+}
+
+.azulgrisTexto{
+    color:#9AC0C7
+
+}
+
+.azulgrisFondo{
+    background-color:#9AC0C7
+}
+
+.grismedioTexto{
+    color:#707070
+
+}
+
+.grismedioFondo{
+    background-color:#707070
+}
+
+/* ------------Gestion de colores grises-------- */
+.grisoscuroFondo{
+    background-color: #454545;
+}
+
+.grisoscuroTexto{
+    color: #454545;
+}
+.grismedioFondo{
+    background-color: #a5a5a5;
+}
+
+.grismedioTexto{
+    color: #a5a5a5;
+}
+
+.grislighFondo{
+    background-color: #EEE;
+
+}
+
+.grislighTexto{
+    color: #EEE;
+
+}
+
+.blancoFondo{
+    background-color: #f7f7f7;
+}
+
+negroTexto{
+    background-color: #101010;
+}
+/* -----------------Tamaño de la Tipografia */
+
+.tituloPrincipal {
+    font-size: 9.125rem;
+    color: #fff;
+    font-family: 'Arial Black';
+}
+
+.botonTexto {
+    font-size: 2.188em;
+}
