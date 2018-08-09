@@ -1,15 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <!--  estilos  -->
+    <style>
+        /* ------------Inclusion en memoria de la siguiente Tipografia---------- */
+        @font-face{
+            font-family: 'OpenSansRegular';
+            src: url('opensans-regular-webfont.woff') format('woff');
+        }
+        @font-face{
+            font-family: 'OpenSansBold';
+            src: url('opensans-bold-webfont.woff') format('woff');
+        }
+
+        /* -------------- Tipografia base de la pagina --------------- */
+        html{
+            font-size: 16px;
+            font-family:'OpenSansRegular', sans-serif;
+            color: #bababa;
+        }
+        body{
+            padding: 150px;
+        }
+        /* ---------------Estilos de la lista de los titulos de la pagina ---------------- */
+        ol{
+            list-style-type: none;
+        }
+
+        ol li {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        a{
+            color: #bababa;
+            text-decoration: none;
+        }
+
+        ol {
+            padding-left: 0px;
+        }
+
+        h1,h4 {
+            font-family: 'OpenSansBold', sans-serif;
+            color: #000; 
+            margin-bottom: 0px;
+        }
+        h1{
+            margin-top: 0px;
+        }
+
+        h4{ 
+            margin-top: 0px;
+            margin-bottom: 80px;
+        }
+
+        /* ----------------Rollover, para lo botones/iconos al pasar el raton encima------------- */
+        /* al pasar encima sobre el elemento LI, haz esto ... al elemento que esta en SPAN, siendo span hijo de LI, sino no se puede hacer esto.*/
+        /* Tambien, el formato de la letra del titulo de la practica, se cambia*/
+        ol li:hover span.icon, ol li:hover a{
+            color: red;
+            font-family: 'OpenSansBold';
+            text-decoration: underline;
+
+            /* separa las letras */
+            /* letter-spacing: 4px;  */
+        }
+        /* Al navegar sobre el titulo de una practica, aparece una figura */
+        ol li:hover .popup {
+            display: inline-block
+        }
+
+        /* -------------------Pop-up---------------------- */
+        /* bloque general, con caracteristicas iguales */
+        .popup {
+
+           
+            width: 100px;
+            height: 100px;
+            border: 10px solid #EEE;
+
+             /* en situacion normal: es un display none */
+            display: none;
+            position: absolute;
+                top: 0px;
+                /* pone la foto al final del bloque de a */
+                right: 400px;               
+                /* left: 600px; */
+                /* la foto sobrepone todos lo titulos, obligando a la imagen que esté 10 capas encima */
+                z-index: 10;
+
+            /* margin-bottom: -50px; /* no hace falta, cuando se pone position*/
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            /* X=horizontal, Y=vertical, Espesor=20px, Ancho= 3px*/
+            box-shadow: 0px 0px 20px 3px rgba(0,0,0, 0.5);
+        }
+
+        .popup01{
+            background-image: url('practicaBlockInline/practicaBlockinline.jpg')
+        }
+
+         .popup02{
+            background-image: url('practicaImagenes/practicaImagenes.jpg')
+        }
+
+         .popup03{
+            background-image: url('practicabanner/practicaBanner.jpg')
+        }
+
+    </style>
+
+
 </head>
 <body>
     <h1>
         Directorio Web: 
-        <h2> Youssef Ahm</h2>
+        <h4> Youssef Ahm</h4>
     </h1>
     <!-- creación de una lista 
     lista numerada <ol>, sus hijos se le llaman con li
@@ -17,12 +132,42 @@
        
     <ol>
             <li>
+                <!-- insertar icono -->
+                <span class="icon">&#9658; </span> 
                 <a href="practicaBlockInline/index.html">
-                Práctica Block/InLine (HTM/CSS)
+                Práctica Block/InLine 06/08/2018 (HTM/CSS) 
                 </a>
+
+                <!-- Pop-up de esta practica: Imagen representativa de la pagina al clicar sobre ella -->
+                <div class="popup popup01"></div>
+
             </li>
-            <li>ITEM02</li>
-            <li>ITEM03</li>
+
+            <li>
+                <span class="icon">&#9658; </span>
+                <a href="practicaImagenes/index.html">Práctica Imágenes 07/08/2018 (HTML/CSS)</a>
+                <!-- Pop-up de esta practica: Imagen representativa de la pagina al clicar sobre ella -->
+                <div class="popup popup02"></div>
+
+            </li>
+
+            <li>
+                <span class="icon">&#9658; </span>
+                <a href="practicabanner/index.html">Práctica con un Mockup Montañas 07/08/2018 (HTML/CSS)</a>
+
+                <!-- Pop-up de esta practica: Imagen representativa de la pagina al clicar sobre ella -->
+                <div class="popup popup03"></div>
+            </li>
+
+            <li>
+                <span class="icon">&#9658; </span>
+                <a href="practicabanner/index.html">ITEM04</a>
+
+                <!-- Pop-up de esta practica: Imagen representativa de la pagina al clicar sobre ella -->
+                <div class="popup popup03"></div>
+ 
+            </li>
+
 
     </ol>
 </body>
